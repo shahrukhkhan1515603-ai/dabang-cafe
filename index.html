@@ -16,6 +16,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#timings">Timings</a></li>
+                <li><a href="#video">Gallery</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -67,6 +68,63 @@
                     <h3>Always Made with Love</h3>
                     <p>Every meal prepared with care and quality ingredients</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video/Gallery Section -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2 class="section-title">Our Cafe</h2>
+            <p class="video-intro">Check out what makes Dabbang Cafe special! 🎬</p>
+            
+            <div class="video-container">
+                <!-- Video Player -->
+                <div class="video-wrapper">
+                    <video id="mainVideo" class="main-video" controls width="100%">
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Video Playlist -->
+                <div class="video-playlist">
+                    <h3>More Videos</h3>
+                    <div class="playlist-items">
+                        <div class="playlist-item" onclick="playVideo(this, 'video.mp4')">
+                            <div class="playlist-thumb">🎥</div>
+                            <div class="playlist-info">
+                                <p class="playlist-title">Cafe Ambiance</p>
+                                <p class="playlist-duration">Main Video</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item" onclick="playVideo(this, 'video2.mp4')">
+                            <div class="playlist-thumb">🎥</div>
+                            <div class="playlist-info">
+                                <p class="playlist-title">Food Preparation</p>
+                                <p class="playlist-duration">Optional</p>
+                            </div>
+                        </div>
+                        <div class="playlist-item" onclick="playVideo(this, 'video3.mp4')">
+                            <div class="playlist-thumb">🎥</div>
+                            <div class="playlist-info">
+                                <p class="playlist-title">Dining Experience</p>
+                                <p class="playlist-duration">Optional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Instructions -->
+            <div class="video-instructions">
+                <h3>📁 How to Add Your Videos:</h3>
+                <ol>
+                    <li>Convert your videos to MP4 format (recommended)</li>
+                    <li>Upload videos (video.mp4, video2.mp4, video3.mp4) to the same folder as index.html</li>
+                    <li>Refresh the page to see videos automatically load</li>
+                    <li>Click on playlist items to switch between videos</li>
+                </ol>
             </div>
         </div>
     </section>
@@ -126,16 +184,29 @@
             <div class="contact-grid">
                 <div class="contact-item">
                     <h3>📍 Location</h3>
-                    <p>Dabbang Cafe<br>Your City, Your Street</p>
+                    <p>Dabbang Cafe<br>
+                    Charsadda Road,<br>
+                    Landi Sarak BRT Stop,<br>
+                    Peshawar, Pakistan<br>
+                    <strong>25000</strong></p>
+                    <a href="https://maps.google.com/?q=Dabbang+Cafe+Peshawar" target="_blank" class="map-link">📌 Open in Maps</a>
                 </div>
                 <div class="contact-item">
                     <h3>📞 Phone</h3>
-                    <p>+91-XXXX-XXXX-XX</p>
+                    <p>Call us for orders & reservations</p>
+                    <a href="tel:" class="phone-link">Click to call</a>
                 </div>
                 <div class="contact-item">
                     <h3>⏰ Hours</h3>
                     <p>12:00 PM - 2:00 AM<br>Daily</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #e63946;">Perfect for Lunch & Late Nights</p>
                 </div>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="map-container">
+                <h3>Visit Us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.787532401247!2d71.52282!3d34.007562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917a7b7b7b7b7%3A0x0!2sCharsadda%20Road%20Peshawar!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -145,6 +216,7 @@
         <div class="container">
             <p>&copy; 2024 Dabbang Cafe. All rights reserved.</p>
             <p>More Taste, More Time! 🔴</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">Charsadda Road, Landi Sarak BRT Stop, Peshawar</p>
         </div>
     </footer>
 
