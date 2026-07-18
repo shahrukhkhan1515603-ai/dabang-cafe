@@ -12,6 +12,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Video Player Functionality
+function playVideo(element, videoSrc) {
+    const mainVideo = document.getElementById('mainVideo');
+    
+    // Remove active class from all items
+    document.querySelectorAll('.playlist-item').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // Add active class to clicked item
+    element.classList.add('active');
+    
+    // Change video source
+    mainVideo.src = videoSrc;
+    mainVideo.play();
+}
+
+// Initialize first video as active on page load
+window.addEventListener('load', function() {
+    const firstPlaylistItem = document.querySelector('.playlist-item');
+    if (firstPlaylistItem) {
+        firstPlaylistItem.classList.add('active');
+    }
+});
+
 // Scroll animation for elements
 const observerOptions = {
     threshold: 0.1,
@@ -131,3 +156,4 @@ document.querySelectorAll('button, a').forEach(element => {
 console.log('%c🔴 Welcome to Dabbang Cafe! 🔴', 'font-size: 20px; color: red; font-weight: bold;');
 console.log('%cMore Taste, More Time!', 'font-size: 14px; color: gold; font-weight: bold;');
 console.log('Hours: 12:00 PM - 2:00 AM | Perfect for Lunch & Late Nights');
+console.log('Location: Charsadda Road, Landi Sarak BRT Stop, Peshawar, Pakistan');
